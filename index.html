@@ -1,16 +1,16 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="etch-a-sketch.png">
     <title>Etch-a-Sketch</title>
   </head>
   <body>
     <div class="flex-container">
-      <div class="title" style="font-size: 3rem; padding-top: 2rem;"><h1>Etch-a-Sketch</h1></div>
-      <div class="mode" style="font-size: 1rem; padding-top: 12px; padding-bottom: 22px;">Mode: Coloring</div>
+      <div class="title" style="font-size: 1.5rem;"><h1>Etch-a-Sketch</h1></div>
+      <div class="mode" style="font-size: 1rem; ">Drawing: ON</div>
       <div class="content">
         <div class="board"></div>
         <div class="buttons" style="padding-top: 1rem;">
@@ -21,9 +21,9 @@
           <button class="restButton" onclick="resetBoard()">Reset</button>
         </div>
         <div>
-          <input type="text" placeholder="Size of Board" value="16"
+          <input type="text" placeholder="Size" value="16"
             onchange="changeSize(this.value)" />
-          <button>Set Size</button>
+          <button class="setButton">Set Size</button>
         </div>
         <div class="error">Input must be between 2 and 100</div>
       </div>
